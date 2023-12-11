@@ -1,0 +1,67 @@
+.container {
+    width: 1200px;
+    height: 700px;
+    margin: 0 auto;
+    display: flex;
+    border: solid;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: stretch;
+}
+
+.container div {
+    width: 300px;
+    height: 100px;
+    /* flex-grow: 1; */
+    /* flex-shrink: 1; */
+}
+
+.container .red {
+    background-color: red;
+    /* flex-grow: 2; */
+    /* flex-shrink: 5; */
+    /* align-self: flex-end; */
+}
+
+.container .yellow {
+    background-color: yellow;
+    /* flex-grow: 3; */
+    order: 1;
+}
+
+.container .blue {
+    background-color: blue;
+}
+
+.container .purple {
+    background-color: purple;
+}
+
+.container .pink {
+    background-color: pink;
+}
+
+.container .orange {
+    background-color: orange;
+}
+.container .magenta {
+    background-color: magenta;
+    order: -1;
+}
+.container .lime {
+    background-color: lime;
+}
+.container .gold {
+    background-color: gold;
+}
+.container .brown {
+    background-color: brown;
+}
+.container .tomato {
+    background-color: tomato;
+}
+.container .cyan {
+    background-color: cyan;
+}

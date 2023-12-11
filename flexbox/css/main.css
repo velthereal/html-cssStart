@@ -1,0 +1,60 @@
+body {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	background-color: #f5f5f5;
+}
+p span {
+	font-weight: bold;
+}
+#modal-overlay {
+	background-color: #f5f5f5;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	/* display: none; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#modal {
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 5px;
+	max-width: 400px;
+	max-height: 450px;
+	overflow: auto;
+}
+#modal h2 {
+	position: relative;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 20px;
+}
+#close-modal {
+	position: absolute;
+	top: -10px;
+	right: 20px;
+	width: 20px;
+	height: 2px;
+	background-color: #000;
+	display: inline-block;
+	margin-top: 20px;
+	transform: rotate(-45deg);
+}
+#close-modal::after {
+	position: absolute;
+	top: 0px;
+	content: "";
+	width: 20px;
+	height: 2px;
+	background-color: #000;
+	display: block;
+	transform: rotate(90deg);
+}
+button {
+	visibility: hidden;
+}
+#close-modal:focus ~ #modal-overlay {
+	display: none;
+}

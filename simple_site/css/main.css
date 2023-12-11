@@ -1,0 +1,101 @@
+@font-face {
+    font-family: Caricature;
+    src: url(../fonts/Caricature.fr.ttf);
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    width: 540px;
+    margin: 0 auto;
+}
+
+article {
+    margin-bottom: 50px;
+}
+
+h1 {
+    background-color: #10b4e8;
+    font-family: Caricature;
+    color: #ffffff;
+    margin-top: 0;
+    padding: 15px 30px;
+    text-transform: uppercase;
+}
+
+figure {
+    margin: 0;
+}
+
+h3 {
+    text-transform: uppercase;
+    color: #2e3327;
+    font-family: sans-serif;
+    font-weight: normal;
+}
+
+p {
+    font-family: sans-serif;
+    color: #b3b5b7;
+    line-height: 30px;
+    text-align: justify;
+}
+
+a {
+    background:  #10b4e8;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    border-radius: 5px;
+}
+
+.align, .align p {
+    text-align: center;
+}
+
+.left {
+    float:left;
+    margin-right: 10px;
+}
+
+.right {
+    float: right;
+    margin-left: 10px;
+}
+
+.col-2 article {
+    width: 48%;
+    float: left;
+    margin: 0 1%;
+    margin-bottom: 50px;
+}
+
+
+.col-3 article{
+    width: 31%;
+    float: left;
+    margin: 0 1%;
+    margin-bottom: 50px;
+}
+
+h4 {
+    text-transform: capitalize;
+    color: #2e3327;
+    font-family: sans-serif;
+}
+
+.col-3 p {
+    text-align: left;
+}
+
+.last-article p {
+    color: #737377;
+}

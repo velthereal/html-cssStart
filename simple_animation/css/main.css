@@ -1,0 +1,119 @@
+body {
+	margin: 0;
+}
+
+.container {
+	background-color: lightyellow;
+	padding: 20px;
+	position: relative;
+	width: 800px;
+	margin: 0 auto;
+	height: 325px;
+	overflow: hidden;
+}
+
+h1 {
+	text-align: center;
+	text-transform: uppercase;
+	font-family: monospace;
+}
+
+img {
+	position: absolute;
+}
+
+img:first-of-type {
+	width: 70px;
+	transform: rotate(-30deg);
+	left: 230px;
+	/* top: 210px; */
+	top: 1000px;
+	animation: one 2s linear 1 forwards;
+	animation-delay: 0s;
+}
+
+img:nth-of-type(2) {
+	width: 100px;
+	transform: rotate(-15deg);
+	left: 310px;
+	/* top: 150px; */
+	top: 1000px;
+	animation: two 2s linear 1 forwards;
+	animation-delay: .5s;
+}
+
+img:nth-of-type(3) {
+	width: 100px;
+	transform: rotate(15deg);
+	left: 425px;
+	/* top: 150px; */
+	top: 1000px;
+	animation: three 2s linear 1 forwards;
+	animation-delay: 1s;
+}
+
+img:nth-of-type(4) {
+	width: 60px;
+	transform: rotate(220deg);
+	left: 540px;
+	/* top: 210px; */
+	top: 1000px;
+	animation: four 2s linear 1 forwards;
+	animation-delay: 1.5s;
+}
+
+img:last-child {
+	display: block;
+	width: 70px;
+	transform: rotate(90deg);
+	left: 380px;
+	/* top: 265px; */
+	top: 1000px;
+	animation: five 2s linear 1 forwards;
+	animation-delay: 2s;
+}
+
+@keyframes one {
+	0% {
+		top: 1000px;
+	}
+	100% {
+		top: 210px;
+	}
+}
+
+@keyframes two {
+	0% {
+		top: 1000px;
+	}
+	100% {
+		top: 150px;
+	}
+}
+
+@keyframes three {
+	0% {
+		top: 1000px;
+	}
+	100% {
+		top: 150px;
+	}
+}
+
+@keyframes four {
+	0% {
+		top: 1000px;
+	}
+	100% {
+		top: 210px;
+	}
+}
+
+@keyframes five {
+	0% {
+		top: 1000px;
+	}
+	100% {
+		top: 265px;
+	}
+}

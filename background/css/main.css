@@ -1,0 +1,18 @@
+body {
+	background-image: url(../images/img.jfif);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+div {
+	width: 780px;
+	margin: 0 auto;
+	background-color: rgba(41, 47, 43, .7);
+	padding: 30px;
+}
+
+p {
+	color: antiquewhite;
+	font-size: 20px;
+}

@@ -1,0 +1,25 @@
+.container {
+	border: 5px orange solid;
+	width: 500px;
+	height: 100px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.box {
+	background-color: orange;
+	width: 100px;
+	height: 100px;
+	animation: animation 3s linear infinite backwards;
+	position: absolute;
+	left: 0px;
+}
+
+@keyframes animation {
+	from {
+		left: 0px;
+	}
+	to {
+		left: 400px;
+	}
+}

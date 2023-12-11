@@ -1,0 +1,22 @@
+img {
+	width: 200px;
+	filter: grayscale(100%);
+	margin: 0 auto;
+	display: block;
+}
+
+img:hover {
+	animation: heart 5s linear 1 forwards;
+	cursor: pointer;
+}
+
+@keyframes heart {
+	from {
+		width: 200px;
+		filter: grayscale(100%);
+	}
+	to {
+		width: 400px;
+		filter: grayscale(0);
+	}
+}

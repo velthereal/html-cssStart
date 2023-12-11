@@ -1,0 +1,98 @@
+body {
+	margin: 0;
+	font-family: sans-serif;
+}
+
+.container {
+	width: 960px;
+	margin: 0 auto;
+	padding: 15px;
+	background-color: #29343d;
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: repeat(4, 160px);
+	grid-gap: 15px;
+}
+
+.container div {
+	background-color: aquamarine;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: rgb(251,126,179);
+	background: linear-gradient(225deg, rgba(251,126,179,1) 0%, rgba(252,240,173,1) 100%);
+}
+
+.container div:first-of-type {
+	grid-row: span 2;
+	grid-column: span 3;
+	grid-column-start: 2;
+	grid-column-end: 5;
+	grid-row-start: 1;
+	grid-row-end: 3;
+	background: rgb(251,126,246);
+	background: linear-gradient(225deg, rgba(251,126,246,1) 0%, rgba(205,169,251,1) 100%);
+}
+
+.container div:nth-of-type(2) {
+	grid-row: span 2;
+	grid-column: span 2;
+	grid-column-start: 3;
+	grid-column-end: 5;
+	grid-row-start: 3;
+	grid-row-end: 5;
+	background: rgb(203,171,251);
+	background: linear-gradient(225deg, rgba(203,171,251,1) 0%, rgba(245,132,247,1) 100%);
+}
+
+.container div:nth-of-type(3) {
+	grid-column: span 2;
+	grid-column-start: 5;
+	grid-column-end: 7;
+	grid-row-start: 1;
+	grid-row-end: 2;
+	background: rgb(121,235,224);
+	background: linear-gradient(225deg, rgba(121,235,224,1) 0%, rgba(113,196,249,1) 100%);
+}
+
+.container div:nth-of-type(4) {
+	grid-column: span 2;
+	grid-column-start: 5;
+	grid-column-end: 7;
+	grid-row-start: 2;
+	grid-row-end: 3;
+	background: rgb(121,235,224);
+	background: linear-gradient(25deg, rgba(121,235,224,1) 0%, rgba(113,196,249,1) 100%);
+}
+
+.container div:nth-of-type(8) {
+	grid-column-start: 1;
+	grid-row-start: 4;
+}
+
+.container div:nth-of-type(10) {
+	grid-column-start: 2;
+	grid-row-start: 4;
+}
+
+p {
+	width: 40px;
+	height: 40px;
+	background-color: #f0f0f0;
+	transform: rotate(45deg);
+	border-radius: 5px;
+	border-bottom: solid 1px #fff;
+	border-right: solid 1px #fff;
+	/* box-shadow: 2px 2px 2px #f0f0f0; */
+}
+
+span {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transform: rotate(-45deg);
+	width: 100%;
+	height: 100%;
+	color: #000;
+	font-weight: bold;
+}

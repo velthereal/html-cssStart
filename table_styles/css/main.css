@@ -1,0 +1,147 @@
+body {
+   font-family: sans-serif;
+   color: #8c8c8c;
+}
+
+table, th {
+   border: solid 1px lightgrey;
+}
+
+table {
+   border-collapse: collapse;
+   margin: 0 auto;
+   /* width: 1000px; */
+   /* height: 1000px; */
+	box-sizing: border-box;
+}
+
+th {
+	padding: 10px;
+	font-weight: normal;
+	/* box-sizing: border-box; */
+	width: 150px;
+	height: 200px;
+}
+
+th, td {
+   text-align: center;
+}
+
+td {
+   height: 70px;
+	width: 150px;
+	border-right: solid 1px lightgrey;
+	font-size: 20px;
+}
+
+tbody tr:nth-of-type(even) {
+	background-color: #f3f3f3;
+}
+
+tfoot td {
+   height: 150px;
+	padding: 12px;
+	font-size: 14px;
+	border-top: solid 1px lightgrey;
+}
+
+.big {
+	text-transform: lowercase;
+	color: #343434;
+	font-weight: normal;
+	font-size: 36px;
+}
+
+.dolar-sign {
+	color: #343434;
+	font-weight: 100;
+	font-size: 50px;
+}
+
+.price {
+	display: inline-block;
+	color: #19aed7;
+	font-weight: normal;
+	font-size: 50px;
+	margin: 20px 0 15px;
+}
+
+p {
+	background-color: #f3f3f3;
+	height: 170px;
+	/* line-height: 40px; */
+	padding: 15px;
+	margin: 0;
+	/* box-sizing: border-box; */
+}
+
+.lowercase {
+	font-size: 25px
+}
+
+.bold {
+   font-weight: bold;
+}
+
+a {
+	display: block;
+   text-decoration: none;
+   background-color: #343434;
+   color: #fff;
+   padding: 15px 25px;
+	width: 70px;
+	/* text-align: center; */
+   /* margin-bottom: 2px; */
+	margin: 20px 45px 0px;
+	font-size: 18px;
+}
+
+a:hover {
+	background-color: #19aed7;
+}
+
+.dolar-sign2 {
+	color: #343434;
+	font-weight: 100;
+	font-size: 30px;
+}
+
+.price2 {
+	display: inline-block;
+	color: #19aed7;
+	font-weight: normal;
+	font-size: 30px;
+}
+
+.lowercase2 {
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+table th:nth-child(4) {
+	background-color: #19aed7;
+}
+
+table td:nth-child(4) {
+	background-color: #19aed7;
+}
+
+table th:nth-child(4) p{
+	background-color: #19aed7;
+}
+
+table th:nth-child(4), 
+table td:nth-child(4), 
+table td:nth-child(4) span, 
+table th:nth-child(4) span {
+	color: #fff;
+}
+
+table th:nth-child(4) {
+	border-bottom: solid 1px #fff;
+}
+
+tfoot td:nth-child(4) {
+	border-top: solid 1px #fff;
+}
+

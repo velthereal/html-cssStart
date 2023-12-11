@@ -1,0 +1,113 @@
+.container {
+	position: relative;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+.menu {
+	position: absolute;
+	list-style-type: none;
+	padding: 0;
+	top: 600px;
+	margin: 0;
+}
+
+.menu li {
+	position: relative;
+	margin: 0;
+	display: inline-block;
+	box-sizing: border-box;
+}
+
+img {
+	width: 230px;
+	display: block;
+}
+
+p {
+	background-color: #505050;
+	width: 230px;
+	height: 20px;
+	margin: 0;
+}
+
+.img {
+	position: absolute;
+	top: -170px;
+	visibility: hidden;
+	animation: second .2s linear 0s 1 normal forwards;
+	opacity: 1;
+}
+
+.shadow {
+	position: absolute;
+	top: -90px;
+	visibility: hidden;
+	animation: second-two .2s linear 0s 1 normal forwards;
+}
+
+ul li .shadow {
+	transform: scaleY(-.7);
+	opacity: .1;
+}
+
+.menu li:hover > .img {
+	visibility: visible;
+	animation: slideshow-one .2s linear 0s 1 normal forwards;
+	cursor: pointer;
+}
+
+.menu li:hover > .shadow {
+	visibility: visible;
+	animation: slideshow-two .2s linear 0s 1 normal forwards;
+	cursor: pointer;
+}
+
+.menu li:hover > p {
+	background-color: rgb(225, 225, 225);
+	box-shadow: 0px 0px 5px #505050;
+	transition: 0.2s linear;
+}
+
+@keyframes slideshow-one {
+	0%{
+		top: -170px;
+	}
+	100% {
+		top: -90px;
+	}
+}
+
+@keyframes slideshow-two {
+	0%{
+		top: -90px;
+	}
+	100% {
+		top: -15px;
+	}
+}
+
+@keyframes second {
+	0% {
+		top: -90px;
+		visibility: visible; 
+		opacity: 1;
+	}
+	100% {
+		top: -170px;
+		visibility: hidden;
+		opacity: .1;
+	}
+}
+
+@keyframes second-two {
+	0% {
+		top: -15px;
+		visibility: visible;
+		opacity: .1;
+	}
+	100% {
+		top: -90px;
+		visibility: hidden;
+		opacity: 0;
+	}
+}
